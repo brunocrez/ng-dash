@@ -1,0 +1,32 @@
+<div class="login-page">
+    <div class="row justify-content-md-center">
+        <div class="col-md-4">
+            <img src="assets/images/logo.png" class="user-avatar" width="150px">
+            <h1>Financial Marketing</h1>
+            <form autocomplete="off">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg input-underline" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg input-underline" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg input-underline" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control input-lg input-underline" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control input-lg input-underline"
+                            placeholder="Repeat Password">
+                    </div>
+                </div>
+                <a [routerLink]="['/register']" class="btn btn-round" style="width: 280px">Register</a>
+            </form>
+            <div class="back-link">
+                <a [routerLink]="['/']">Home Page</a>
+            </div>
+        </div>
+    </div>
+</div>

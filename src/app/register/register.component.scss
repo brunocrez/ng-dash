@@ -1,0 +1,17 @@
+@import '../login/login.component.scss';
+
+.back-link {    
+    margin-top: 18px;
+    font-size: 15px;    
+}
+
+.back-link > a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: 300ms color;
+}
+
+.back-link > a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
