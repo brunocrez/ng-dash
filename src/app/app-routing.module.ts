@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'dashboard',
-    loadChildren: () => import('./views/layout.module').then(m => m.LayoutModule)
+    loadChildren: () => import('./layout/layout.module').then(m => m.LayoutModule)
   }
 ]
 

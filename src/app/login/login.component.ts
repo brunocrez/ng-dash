@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
   constructor(private formBuilder: FormBuilder, private router: Router) {
     this.loginForm = formBuilder.group({
       email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(6)]]
+      password: ['', [Validators.required, Validators.minLength(5)]]
     })
   }
 
@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
       return
     }
 
-    if (this.f.email.value === 'admin@admin.com' && this.f.password.value === '123123') {
+    if (this.f.email.value === 'admin@admin' && this.f.password.value === 'admin') {
       localStorage.setItem('loggedIn', 'true')
       this.router.navigate(['/dashboard'])
     } else {
